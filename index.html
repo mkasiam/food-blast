@@ -271,6 +271,76 @@
           </div>
         </div>
       </section>
+      <!-- ====================Deal of the day section=======================  -->
+      <section class="space-y-14">
+        <div class="flex justify-between lg:space-y-5">
+          <div >
+            <h1 class="text-5xl font-extrabold text-[#121212]">Deal of the day</h1>
+            <p class="text-[#12121299] font-medium">
+              Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
+            </p>
+          </div>
+          <!--====================== Countdown ====================== -->
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>:
+              </span>
+              Days
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>:
+              </span>
+              Hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>:
+              </span>
+              Minutes
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+              </span>
+              Seconds
+            </div>
+          </div>
+        </div>
+        <!-- Deal of the products Container -->
+        <div class="grid grid-cols-1 lg:grid-cols-4">
+          <div class="text-center">
+            <div class="flex justify-center"><img src="./images/fruit1.png" alt=""></div>
+            <p class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</p>
+            <p class="text-[#12121299] my-4">Grapes</p>
+            <div class="rating w-24">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <div>
+              <button class="text-[#F85559] font-bold" onclick="my_modal_1.showModal()">Details</button>
+              <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box">
+                  <h3 class="font-bold text-lg">Hello!</h3>
+                  <p class="py-4">Press ESC key or click the button below to close</p>
+                  <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+
+
+          </div>
+
+        </div>
+      </section>
+
       <!-- ======================Meet the team section==================  -->
       <section class="space-y-16">
         <div
