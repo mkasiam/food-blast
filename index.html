@@ -48,12 +48,12 @@
      
     </style>
   </head>
-  <body class="font-lato">
+  <body class="font-lato sm:text-center">
 
     <header class="container mx-auto">
       <!-- This is nav section  -->
       <nav class="bg-common-color rounded-full text-[#FFF] py-2 mt-5">
-        <div class="flex justify-around items-center">
+        <div class="flex justify-around items-center flex-row-reverse lg:flex-row">
           <!-- Nav start  -->
           <div class="hidden sm:block">
             <ul class="flex gap-6 ">
@@ -68,7 +68,7 @@
             <label tabindex="0" class="btn btn-ghost btn-circle">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             </label>
-            <ul tabindex="0" class="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
+            <ul tabindex="0" class="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box max-w-max text-black">
               <li><a href="#">Home</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Shop</a></li>
@@ -82,7 +82,7 @@
             <h1 class="text-4xl font-bold color-white">Fruit Burst</h1>
           </div>
           <!-- Nav End  -->
-          <div>
+          <div class="hidden sm:block">
             <div class="flex justify-center relative">
               <input type="text" class="w-full px-8 py-[10px] outline-none rounded-full bg-[#FFF] text-black" placeholder="Search here"/>
               <button class="absolute right-[15px] top-2"><i class="fa-solid fa-magnifying-glass text-black"></i></button>
@@ -243,7 +243,7 @@
       <!-- ====================Deal of the day section=======================  -->
       <section class="space-y-10 lg:mt-32">
         <!--========= Deal of the description and countdown =========== -->
-        <div class="flex justify-between lg:space-y-5">
+        <div class="flex justify-between lg:space-y-5 flex-col lg:flex-row space-y-5">
           <div >
             <h1 class="text-5xl font-extrabold text-[#121212]">Deal of the day</h1>
             <p class="text-[#12121299] font-medium">
@@ -280,9 +280,9 @@
         </div>
 
         <!-- Deal of the products Container -->
-          <div class="grid grid-cols-1 lg:grid-cols-4 lg:py-8">
+          <div class="grid grid-cols-1 lg:grid-cols-4 lg:py-8 lg:gap-x-5">
               <!-- Product-1  -->
-              <div class="text-center">
+              <div class="text-center rounded-xl border-[#1212121a] border-2 py-10">
                 <div class="flex justify-center"><img src="./images/fruit6.png" alt=""></div>
                 <p class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</p>
                 <p class="text-[#12121299] my-4">Apple</p>
@@ -323,7 +323,7 @@
                 </div>
               </div>
               <!-- Product-2  -->
-              <div class="text-center">
+              <div class="text-center rounded-xl border-[#1212121a] border-2 py-10">
                 <div class="flex justify-center"><img src="./images/fruit7.png" alt=""></div>
                 <p class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</p>
                 <p class="text-[#12121299] my-4">Orange</p>
@@ -366,7 +366,7 @@
 
               </div>
               <!-- Product-3  -->
-              <div class="text-center">
+              <div class="text-center rounded-xl border-[#1212121a] border-2 py-10">
                 <div class="flex justify-center"><img src="./images/fruit8.png" alt=""></div>
                 <p class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</p>
                 <p class="text-[#12121299] my-4">Red Dragon</p>
@@ -409,7 +409,7 @@
 
               </div>
               <!-- Product-4  -->
-              <div class="text-center">
+              <div class="text-center rounded-xl border-[#1212121a] border-2 py-10">
                 <div class="flex justify-center"><img src="./images/fruit9.png" alt=""></div>
                 <p class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</p>
                 <p class="text-[#12121299] my-4">Banana</p>
@@ -458,7 +458,7 @@
       </section>
 
       <!-- ======================Meet the team section==================  -->
-      <section class="space-y-16 my-16">
+      <section class="space-y-16 my-16 ">
         <div
               class="hero min-h-screen"
               style="background-image: url(./images/team.png)"
@@ -543,9 +543,9 @@
           </p>
         </div>
         <!-- ====================Choose US main container =========================== -->
-        <div class="flex gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:text-center">
           <!--==================== left content of choose us======================== -->
-          <div class="flex flex-col px-4">
+          <div class="flex flex-col px-4 lg:text-left">
             <!--Left First content  -->
             <div class="flex items-center gap-4">
               <div class="w-14 h-10 rounded-full bg-[#1212121a]">
@@ -554,7 +554,7 @@
                 </div>  
               </div>
               <div class="space-y-2">
-                <h1 class="text-xl font-extrabold half-border-bottom">
+                <h1 class="text-xl font-extrabold">
                   Dedicated Team
                 </h1>
                 <span class="divider"></span>
@@ -572,7 +572,7 @@
                 </div>  
               </div>
               <div class="space-y-2">
-                <h1 class="text-xl font-extrabold half-border-bottom">
+                <h1 class="text-xl font-extrabold">
                   Fresh is Best
                 </h1>
                 <span class="divider"></span>
@@ -589,7 +589,7 @@
                 </div>  
               </div>
               <div class="space-y-2">
-                <h1 class="text-xl font-extrabold half-border-bottom">
+                <h1 class="text-xl font-extrabold">
                   Gift Certificates
                 </h1>
                 <span class="divider"></span>
@@ -603,12 +603,12 @@
           </div>
 
           <!--================== Choose us Middle Section ========================== -->
-          <div>
+          <div class="col-span-1">
             <img src="./images/whychoose1.png" alt="">
           </div>
           <!--==================== right content of choose us======================== -->
 
-          <div class="text-right float-right px-4">
+          <div class="text-right float-right px-4 ">
             <!-- Right First Line  -->
               <div class="flex flex-row-reverse items-center gap-2">
                 <div class="w-14 h-10 rounded-full bg-[#1212121a]">
@@ -617,7 +617,7 @@
                   </div>  
                 </div>
                 <div class="space-y-2">
-                  <h1 class="text-xl font-extrabold half-border-bottom">
+                  <h1 class="text-xl font-extrabold">
                     Integrated Supplier
                   </h1>
                   <span class="divider"></span>
@@ -637,7 +637,7 @@
                   </div>  
                 </div>
                 <div class="space-y-2">
-                  <h1 class="text-xl font-extrabold half-border-bottom">
+                  <h1 class="text-xl font-extrabold">
                     Sustainable Practice
                   </h1>
                   <span class="divider"></span>
@@ -657,7 +657,7 @@
                   </div>  
                 </div>
                 <div class="space-y-2">
-                  <h1 class="text-xl font-extrabold half-border-bottom">
+                  <h1 class="text-xl font-extrabold">
                     The Benefits Only
                   </h1>
                   <span class="divider"></span>
@@ -680,13 +680,25 @@
         <img src="./images/logo.png" alt="">
         <h1 class="text-4xl font-bold text-[#FFF]">Fruit Burst</h1>
       </div> 
-      <div class="flex flex-wrap gap-7 font-semibold">
-        <a  href="#">Home</a>
-        <a  href="#">About Us</a>
-        <a  href="#">shop</a>
-        <a  href="#">All Fruits</a>
-        <a  href="#">Support</a>
-        <a  href="#">My Account</a>
+      <div class="grid grid-cols-4 lg:grid-flow-col gap-3 font-semibold">
+        <div>
+          <a  href="#">Home</a>
+        </div>
+        <div>
+          <a  href="#">About Us</a>
+        </div>
+        <div>
+          <a  href="#">shop</a>
+        </div>
+        <div>
+          <a  href="#">All Fruits</a>
+        </div>
+        <div class="col-span-2">
+          <a  href="#">Support</a>
+        </div>
+        <div class="col-span-2">
+          <a  href="#">My Account</a>
+        </div>        
       </div>
       <div class="flex flex-wrap gap-7">
         <a href="#"><img class="w-6" src="./images/Social-media-icons/twitter 1.svg" alt="" /></a>
