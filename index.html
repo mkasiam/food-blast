@@ -49,29 +49,30 @@
     </style>
   </head>
   <body class="font-lato">
+
     <header class="container mx-auto">
       <!-- This is nav section  -->
       <nav class="bg-common-color rounded-full text-[#FFF] py-2 mt-5">
         <div class="flex justify-around items-center">
           <!-- Nav start  -->
-          <div>
+          <div class="hidden sm:block">
             <ul class="flex gap-6 ">
-              <li><a>Home</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Shop</a></li>
-              <li><a>All Fruits</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">All Fruits</a></li>
             </ul>                   
           </div> 
           <!-- Nav Start bar for Small and Medium devices  -->
-          <div class="block sm:hidden dropdown">
+          <div class="block sm:hidden dropdown  ">
             <label tabindex="0" class="btn btn-ghost btn-circle">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Home</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Shop</a></li>
-              <li><a>All Fruits</a></li>
+            <ul tabindex="0" class="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">All Fruits</a></li>
             </ul>
           </div>
         
@@ -87,18 +88,15 @@
               <button class="absolute right-[15px] top-2"><i class="fa-solid fa-magnifying-glass text-black"></i></button>
             </div>
           </div>
-
         </div>
-
-
-
       </nav>
     </header>
+
     <main class="container mx-auto">
-      <!-- Banner section  -->
+      <!--=============================== Banner section ============================= -->
       <section class="my-5">
-        <!-- Carousel start  -->
-        <div class="carousel w-full relative rounded-xl lg:h-[620px]">
+        <!-- =====Carousel======   -->
+        <div class="carousel w-full relative rounded-xl">
           <!-- Slide-1  -->
           <div id="slide1" class="carousel-item relative w-full">
             <div
@@ -216,7 +214,7 @@
             </div>
           </div>
         </div>
-        <!-- Carousel end  -->
+       <!-- Relative Information Box  -->
         <div class="hidden sm:block absolute -bottom-52 left-60">
           <div class="flex gap-5 bg-[#FFF] shadow-xl rounded-xl px-14 py-7">
             <div class="text-center">
@@ -244,6 +242,7 @@
       </section>
       <!-- ====================Deal of the day section=======================  -->
       <section class="space-y-10 lg:mt-32">
+        <!--========= Deal of the description and countdown =========== -->
         <div class="flex justify-between lg:space-y-5">
           <div >
             <h1 class="text-5xl font-extrabold text-[#121212]">Deal of the day</h1>
@@ -279,13 +278,14 @@
             </div>
           </div>
         </div>
+
         <!-- Deal of the products Container -->
           <div class="grid grid-cols-1 lg:grid-cols-4 lg:py-8">
               <!-- Product-1  -->
               <div class="text-center">
-                <div class="flex justify-center"><img src="./images/fruit1.png" alt=""></div>
+                <div class="flex justify-center"><img src="./images/fruit6.png" alt=""></div>
                 <p class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</p>
-                <p class="text-[#12121299] my-4">Grapes</p>
+                <p class="text-[#12121299] my-4">Apple</p>
                 <div class="rating w-24">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -298,10 +298,10 @@
                   <dialog id="my_modal_1" class="modal">
                     <form method="dialog" class="modal-box">
                       <div class="flex flex-col justify-center">
-                        <div class="flex justify-center"><img src="./images/fruit1.png" alt=""></div>
+                        <div class="flex justify-center"><img src="./images/fruit6.png" alt=""></div>
                         <div>
                           <p class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</p>
-                          <p class="text-[#12121299] my-4">Grapes</p>
+                          <p class="text-[#12121299] my-4">Apple</p>
                         </div>
                         <div class="rating w-24 mx-auto my-4">
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -310,7 +310,7 @@
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                          <!-- if there is a button in form, it will close the modal -->
+
                           <div class="flex gap-x-5 mx-auto">
                             <button class="btn">Close</button>
                             <button class="btn  bg-common-color text-white border-0">Buy Now</button>
@@ -321,14 +321,12 @@
                     </form>
                   </dialog>
                 </div>
-
-
               </div>
               <!-- Product-2  -->
               <div class="text-center">
-                <div class="flex justify-center"><img src="./images/fruit1.png" alt=""></div>
+                <div class="flex justify-center"><img src="./images/fruit7.png" alt=""></div>
                 <p class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</p>
-                <p class="text-[#12121299] my-4">Grapes</p>
+                <p class="text-[#12121299] my-4">Orange</p>
                 <div class="rating w-24">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -341,10 +339,10 @@
                   <dialog id="my_modal_2" class="modal">
                     <form method="dialog" class="modal-box">
                       <div class="flex flex-col justify-center">
-                        <div class="flex justify-center"><img src="./images/fruit1.png" alt=""></div>
+                        <div class="flex justify-center"><img src="./images/fruit7.png" alt=""></div>
                         <div>
                           <p class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</p>
-                          <p class="text-[#12121299] my-4">Grapes</p>
+                          <p class="text-[#12121299] my-4">Orange</p>
                         </div>
                         <div class="rating w-24 mx-auto my-4">
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -353,7 +351,7 @@
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                          <!-- if there is a button in form, it will close the modal -->
+
                           <div class="flex gap-x-5 mx-auto">
                             <button class="btn">Close</button>
                             <button class="btn  bg-common-color text-white border-0">Buy Now</button>
@@ -369,9 +367,9 @@
               </div>
               <!-- Product-3  -->
               <div class="text-center">
-                <div class="flex justify-center"><img src="./images/fruit1.png" alt=""></div>
+                <div class="flex justify-center"><img src="./images/fruit8.png" alt=""></div>
                 <p class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</p>
-                <p class="text-[#12121299] my-4">Grapes</p>
+                <p class="text-[#12121299] my-4">Red Dragon</p>
                 <div class="rating w-24">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -384,10 +382,10 @@
                   <dialog id="my_modal_3" class="modal">
                     <form method="dialog" class="modal-box">
                       <div class="flex flex-col justify-center">
-                        <div class="flex justify-center"><img src="./images/fruit1.png" alt=""></div>
+                        <div class="flex justify-center"><img src="./images/fruit8.png" alt=""></div>
                         <div>
                           <p class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</p>
-                          <p class="text-[#12121299] my-4">Grapes</p>
+                          <p class="text-[#12121299] my-4">Red Dragon</p>
                         </div>
                         <div class="rating w-24 mx-auto my-4">
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -396,7 +394,7 @@
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                          <!-- if there is a button in form, it will close the modal -->
+
                           <div class="flex gap-x-5 mx-auto">
                             <button class="btn">Close</button>
                             <button class="btn  bg-common-color text-white border-0">Buy Now</button>
@@ -412,9 +410,9 @@
               </div>
               <!-- Product-4  -->
               <div class="text-center">
-                <div class="flex justify-center"><img src="./images/fruit1.png" alt=""></div>
+                <div class="flex justify-center"><img src="./images/fruit9.png" alt=""></div>
                 <p class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</p>
-                <p class="text-[#12121299] my-4">Grapes</p>
+                <p class="text-[#12121299] my-4">Banana</p>
                 <div class="rating w-24">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -427,10 +425,10 @@
                   <dialog id="my_modal_4" class="modal">
                     <form method="dialog" class="modal-box">
                       <div class="flex flex-col justify-center">
-                        <div class="flex justify-center"><img src="./images/fruit1.png" alt=""></div>
+                        <div class="flex justify-center"><img src="./images/fruit9.png" alt=""></div>
                         <div>
                           <p class="text-[#121212] font-bold text-2xl">12.90$ - 18.85$</p>
-                          <p class="text-[#12121299] my-4">Grapes</p>
+                          <p class="text-[#12121299] my-4">Banana</p>
                         </div>
                         <div class="rating w-24 mx-auto my-4">
                           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -570,17 +568,16 @@
             <div class="flex items-center gap-4">
               <div class="w-14 h-10 rounded-full bg-[#1212121a]">
                 <div class="flex justify-center mt-2">
-                  <img src="./images/icons/group .svg" alt="" />
+                  <img src="./images/icons/love.svg" alt="" />
                 </div>  
               </div>
               <div class="space-y-2">
                 <h1 class="text-xl font-extrabold half-border-bottom">
-                  Dedicated Team
+                  Fresh is Best
                 </h1>
                 <span class="divider"></span>
                 <p class="text-[#12121299]">
-                  Professional employees are there for you to pick the most
-                  amazing and fresh fruits.
+                  Professional employees are there for you to pick the most amazing and fresh fruits.
                 </p>
               </div>
             </div>
@@ -588,12 +585,12 @@
             <div class="flex items-center gap-4">
               <div class="w-14 h-10 rounded-full bg-[#1212121a]">
                 <div class="flex justify-center mt-2">
-                  <img src="./images/icons/group .svg" alt="" />
+                  <img src="./images/icons/gift-box.svg" alt="" />
                 </div>  
               </div>
               <div class="space-y-2">
                 <h1 class="text-xl font-extrabold half-border-bottom">
-                  Dedicated Team
+                  Gift Certificates
                 </h1>
                 <span class="divider"></span>
                 <p class="text-[#12121299]">
@@ -616,12 +613,12 @@
               <div class="flex flex-row-reverse items-center gap-2">
                 <div class="w-14 h-10 rounded-full bg-[#1212121a]">
                   <div class="flex justify-center mt-2">
-                    <img src="./images/icons/group .svg" alt="" />
+                    <img src="./images/icons/fruit.svg" alt="" />
                   </div>  
                 </div>
                 <div class="space-y-2">
                   <h1 class="text-xl font-extrabold half-border-bottom">
-                    Dedicated Team
+                    Integrated Supplier
                   </h1>
                   <span class="divider"></span>
                   <p class="text-[#12121299]">
@@ -636,12 +633,12 @@
               <div class="flex flex-row-reverse items-center gap-2">
                 <div class="w-14 h-10 rounded-full bg-[#1212121a]">
                   <div class="flex justify-center mt-2">
-                    <img src="./images/icons/group .svg" alt="" />
+                    <img src="./images/icons/ice-cream .svg" alt="" />
                   </div>  
                 </div>
                 <div class="space-y-2">
                   <h1 class="text-xl font-extrabold half-border-bottom">
-                    Dedicated Team
+                    Sustainable Practice
                   </h1>
                   <span class="divider"></span>
                   <p class="text-[#12121299]">
@@ -656,12 +653,12 @@
               <div class="flex flex-row-reverse items-center gap-2">
                 <div class="w-14 h-10 rounded-full bg-[#1212121a]">
                   <div class="flex justify-center mt-2">
-                    <img src="./images/icons/group .svg" alt="" />
+                    <img src="./images/icons/like .svg" alt="" />
                   </div>  
                 </div>
                 <div class="space-y-2">
                   <h1 class="text-xl font-extrabold half-border-bottom">
-                    Dedicated Team
+                    The Benefits Only
                   </h1>
                   <span class="divider"></span>
                   <p class="text-[#12121299]">
