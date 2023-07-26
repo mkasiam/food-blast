@@ -26,7 +26,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              clifford: "#da373d",
+              "common-color": "#F85559",
             },
           },
         },
@@ -35,22 +35,50 @@
     <title>Fruit Blast</title>
     <style>
       .font-lato {
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
+      }
+      .half-border-bottom {
+        position: relative;
+      }
+
+      .half-border-bottom::before {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 50%;
+        height: 2px;
+        background-color: black; 
       }
     </style>
   </head>
   <body class="font-lato">
     <header class="container mx-auto">
       <!-- This is nav section  -->
-      <nav class="bg-[#F85559] rounded-full">
+      <nav class="bg-common-color rounded-full">
         <div class="navbar">
-
           <div class="navbar-start">
-            <div class="dropdown ">
+            <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost btn-circle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
               </label>
-              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
                 <li><a>Homepage</a></li>
                 <li><a>Portfolio</a></li>
                 <li><a>About</a></li>
@@ -59,20 +87,330 @@
           </div>
 
           <div class="navbar-center">
-            <a class="btn btn-ghost normal-case text-xl"><img src="./images/logo.png" alt=""><h1 class="text-4xl font-bold color-white">Fruit Burst</h1></a>
+            <a class="btn btn-ghost normal-case text-xl"
+              ><img src="./images/logo.png" alt="" />
+              <h1 class="text-4xl font-bold color-white">Fruit Burst</h1></a
+            >
           </div>
 
           <div class="navbar-end">
-            <button class="btn btn-ghost btn-circle">
-              <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs" />
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-            </button>
-            
+            <div class="form-control">
+              <div class="input-group">
+                <input
+                  type="text"
+                  placeholder="Search here"
+                  class="input rounded-full"
+                />
+                <button class="btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-
       </nav>
-
     </header>
+    <main class="container mx-auto">
+      <!-- Banner section  -->
+      <section class="my-10">
+        <!-- Carousel start  -->
+        <div class="carousel w-full my-5 relative">
+          <!-- Slide-1  -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(./images/banner1.png)"
+            >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div>
+                  <h1 class="mb-5 text-7xl font-extrabold">
+                    Exotic tastes at your<br />
+                    doorstep
+                  </h1>
+                  <p class="mb-5 font-medium text-[#FFF]">
+                    We supply highly quality organic products
+                  </p>
+                  <button class="btn bg-common-color text-white border-0">
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- Slide-2  -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(./images/banner2.png)"
+            >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div>
+                  <h1 class="mb-5 text-7xl font-extrabold">
+                    Exotic tastes at your<br />
+                    doorstep
+                  </h1>
+                  <p class="mb-5 font-medium text-[#FFF]">
+                    We supply highly quality organic products
+                  </p>
+                  <button class="btn bg-common-color text-white border-0">
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- Slide-3  -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(./images/banner3.png)"
+            >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div>
+                  <h1 class="mb-5 text-7xl font-extrabold">
+                    Exotic tastes at your<br />
+                    doorstep
+                  </h1>
+                  <p class="mb-5 font-medium text-[#FFF]">
+                    We supply highly quality organic products
+                  </p>
+                  <button class="btn bg-common-color text-white border-0">
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- Slide-4  -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(./images/banner4.png)"
+            >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div>
+                  <h1 class="mb-5 text-7xl font-extrabold">
+                    Exotic tastes at your<br />
+                    doorstep
+                  </h1>
+                  <p class="mb-5 font-medium text-[#FFF]">
+                    We supply highly quality organic products
+                  </p>
+                  <button class="btn bg-common-color text-white border-0">
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel end  -->
+        <div class="absolute -bottom-40 left-72">
+          <div class="flex gap-5 bg-white rounded-xl">
+            <div class="text-center">
+              <img class="mx-auto" src="./images/fruit1.png" alt="" />
+              <p class="font-medium">Grapes</p>
+            </div>
+            <div class="text-center">
+              <img src="./images/fruit2.png" alt="" />
+              <p class="font-medium">Orange</p>
+            </div>
+            <div class="text-center">
+              <img src="./images/fruit3.png" alt="" />
+              <p class="font-medium">Mango</p>
+            </div>
+            <div class="text-center">
+              <img src="./images/fruit4.png" alt="" />
+              <p class="font-medium">Strawberry</p>
+            </div>
+            <div class="text-center">
+              <img src="./images/fruit5.png" alt="" />
+              <p class="font-medium">special</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--===================== Why Choose us section========================  -->
+      <section>
+        <!--================== Section Title and sub-text ======================== -->
+        <div class="text-center">
+          <h1 class="text-6xl font extrabold">Why Choose Us</h1>
+          <p>
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old
+          </p>
+        </div>
+        <!-- ====================Choose US main container =========================== -->
+        <div class="flex">
+          <!--==================== left content of choose us======================== -->
+          <div class="flex flex-col">
+
+            <div class="flex items-center gap-2">
+              <div class="w-10 h-10 rounded-full  bg-[#1212121a]">
+                <div class="flex justify-center mt-2">
+                  <img src="./images/icons/group .svg" alt="" />
+                </div>  
+              </div>
+              <div class="space-y-4">
+                <h1 class="text-xl font-extrabold half-border-bottom">
+                  Dedicated Team
+                </h1>
+                <p class="text-[#12121299]">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <div class="w-10 h-10 rounded-full  bg-[#1212121a]">
+                <div class="flex justify-center mt-2">
+                  <img src="./images/icons/group .svg" alt="" />
+                </div>  
+              </div>
+              <div  class="space-y-4">
+                <h1 class="text-xl font-extrabold half-border-bottom">
+                  Dedicated Team
+                </h1>
+                <p class="text-[#12121299]">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <div class="w-10 h-10 rounded-full  bg-[#1212121a]">
+                <div class="flex justify-center mt-2">
+                  <img src="./images/icons/group .svg" alt="" />
+                </div>  
+              </div>
+              <div  class="space-y-4">
+                <h1 class="text-xl font-extrabold half-border-bottom">
+                  Dedicated Team
+                </h1>
+                <p class="text-[#12121299]">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+          <!-- Choose us Middle  -->
+          <div>
+            <img src="./images/whychoose1.png" alt="">
+          </div>
+          <div class="text-right">
+            
+
+              <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-full  bg-[#1212121a]">
+                  <div class="flex justify-center mt-2">
+                    <img src="./images/icons/group .svg" alt="" />
+                  </div>  
+                </div>
+                <div class="space-y-4">
+                  <h1 class="text-xl font-extrabold half-border-bottom">
+                    Dedicated Team
+                  </h1>
+                  <p class="text-[#12121299]">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+  
+              <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-full  bg-[#1212121a]">
+                  <div class="flex justify-center mt-2">
+                    <img src="./images/icons/group .svg" alt="" />
+                  </div>  
+                </div>
+                <div  class="space-y-4">
+                  <h1 class="text-xl font-extrabold half-border-bottom">
+                    Dedicated Team
+                  </h1>
+                  <p class="text-[#12121299]">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+  
+              <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-full  bg-[#1212121a]">
+                  <div class="flex justify-center mt-2">
+                    <img src="./images/icons/group .svg" alt="" />
+                  </div>  
+                </div>
+                <div  class="space-y-4">
+                  <h1 class="text-xl font-extrabold half-border-bottom">
+                    Dedicated Team
+                  </h1>
+                  <p class="text-[#12121299]">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+  
+  
+  
+  
+  
+  
+            </div>
+
+        </div>
+      </section>
+    </main>
   </body>
 </html>
