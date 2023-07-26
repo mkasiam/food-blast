@@ -48,7 +48,7 @@
         position: absolute;
         bottom: -2px;
         left: 0;
-        width: 50%;
+        width: 18%;
         height: 2px;
         background-color: black; 
       }
@@ -57,40 +57,58 @@
   <body class="font-lato">
     <header class="container mx-auto">
       <!-- This is nav section  -->
-      <nav class="bg-common-color rounded-full">
-        <div class="flex justify-center items-center lg:gap-x-72">
+      <nav class="bg-common-color rounded-full text-[#FFF] py-2 mt-5">
+        <div class="flex justify-around items-center">
           <!-- Nav start  -->
           <div>
-            <ul class="flex ">
-              <li><a>Item 1</a></li>
-              <li><a>Item 2</a></li>
-              <li><a>Item 3</a></li>
+            <ul class="flex gap-6 ">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
             </ul>                   
           </div> 
+          <!-- Nav Start bar for Small and Medium devices  -->
+          <div class="block sm:hidden dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        
           <!-- Nav center  -->
           <div class="flex items-center gap-4">
             <img src="./images/logo.png" alt="">
             <h1 class="text-4xl font-bold color-white">Fruit Burst</h1>
           </div>
           <!-- Nav End  -->
-          <div class="">
+          <div>
             <div class="flex justify-center relative">
-              <input type="text" class="w-full px-5 py-2 outline-none rounded-full bg-[#FFF]" placeholder="Search here"/>
-              <button class="absolute right-[15px] top-2"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <input type="text" class="w-full px-8 py-[10px] outline-none rounded-full bg-[#FFF] text-black" placeholder="Search here"/>
+              <button class="absolute right-[15px] top-2"><i class="fa-solid fa-magnifying-glass text-black"></i></button>
             </div>
           </div>
+
         </div>
+
+
+
       </nav>
     </header>
     <main class="container mx-auto">
       <!-- Banner section  -->
-      <section class="my-10">
+      <section class="my-5">
         <!-- Carousel start  -->
-        <div class="carousel w-full relative">
+        <div class="carousel w-full relative rounded-xl lg:h-[620px]">
           <!-- Slide-1  -->
           <div id="slide1" class="carousel-item relative w-full">
             <div
-              class="hero w-full"
+              class="hero w-full bg-cover h-inherit"
               style="background-image: url(./images/banner1.png);"
             >
               <div class="hero-overlay bg-opacity-60"></div>
@@ -205,7 +223,7 @@
           </div>
         </div>
         <!-- Carousel end  -->
-        <div class="hidden sm:block absolute -bottom-40 left-72">
+        <div class="hidden sm:block absolute -bottom-52 left-60">
           <div class="flex gap-5 bg-[#FFF] shadow-xl rounded-xl px-14 py-7">
             <div class="text-center">
               <img class="mx-auto" src="./images/fruit1.png" alt="" />
@@ -231,7 +249,7 @@
         </div>
       </section>
       <!-- ====================Deal of the day section=======================  -->
-      <section class="space-y-10 my-10">
+      <section class="space-y-10 lg:mt-32">
         <div class="flex justify-between lg:space-y-5">
           <div >
             <h1 class="text-5xl font-extrabold text-[#121212]">Deal of the day</h1>
@@ -448,7 +466,7 @@
       </section>
 
       <!-- ======================Meet the team section==================  -->
-      <section class="space-y-16">
+      <section class="space-y-16 my-16">
         <div
               class="hero min-h-screen"
               style="background-image: url(./images/team.png)"
@@ -524,7 +542,7 @@
       <!--===================== Why Choose us section========================  -->
       <section class="my-14">
         <!--================== Section Title and sub-text ======================== -->
-        <div class="text-center">
+        <div class="text-center space-y-5 mb-5">
           <h1 class="text-6xl font extrabold">Why Choose Us</h1>
           <p>
             Contrary to popular belief, is not simply random text. It has roots
@@ -585,30 +603,28 @@
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
+
               </div>
+
             </div>
 
-
-
-
-
-
           </div>
-          <!-- Choose us Middle  -->
+          <!--================== Choose us Middle Section ========================== -->
           <div>
             <img src="./images/whychoose1.png" alt="">
           </div>
           <!--==================== right content of choose us======================== -->
 
           <div class="text-right float-right">
-              <div class="flex items-center gap-2">
+            <!-- First Line  -->
+              <div class="flex flex-row-reverse items-center gap-2">
                 <div class="w-10 h-10 rounded-full  bg-[#1212121a]">
                   <div class="flex justify-center mt-2">
                     <img src="./images/icons/group .svg" alt="" />
                   </div>  
                 </div>
                 <div class="space-y-4">
-                  <h1 class="text-xl font-extrabold half-border-bottom">
+                  <h1 class="text-xl font-extrabold half-border-bottom border-b-4 border-black inline ">
                     Dedicated Team
                   </h1>
                   <p class="text-[#12121299]">
@@ -617,7 +633,7 @@
                   </p>
                 </div>
               </div>
-  
+              <!-- Second Line  -->
               <div class="flex items-center gap-2">
                 <div class="w-10 h-10 rounded-full  bg-[#1212121a]">
                   <div class="flex justify-center mt-2">
@@ -634,7 +650,7 @@
                   </p>
                 </div>
               </div>
-  
+              <!-- Third Line  -->
               <div class="flex items-center gap-2">
                 <div class="w-10 h-10 rounded-full  bg-[#1212121a]">
                   <div class="flex justify-center mt-2">
