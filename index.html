@@ -543,11 +543,11 @@
           </p>
         </div>
         <!-- ====================Choose US main container =========================== -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:text-center">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 text-center">
           <!--==================== left content of choose us======================== -->
-          <div class="flex flex-col px-4 lg:text-left">
+          <div class="flex flex-col px-4 lg:text-left order-2 lg:order-1">
             <!--Left First content  -->
-            <div class="flex items-center gap-4">
+            <div class="flex flex-col lg:flex-row items-center gap-4">
               <div class="w-14 h-10 rounded-full bg-[#1212121a]">
                 <div class="flex justify-center mt-2">
                   <img src="./images/icons/group .svg" alt="" />
@@ -565,7 +565,7 @@
               </div>
             </div>
             <!--Left Second Content  -->
-            <div class="flex items-center gap-4">
+            <div class="flex flex-col lg:flex-row items-center gap-4">
               <div class="w-14 h-10 rounded-full bg-[#1212121a]">
                 <div class="flex justify-center mt-2">
                   <img src="./images/icons/love.svg" alt="" />
@@ -582,7 +582,7 @@
               </div>
             </div>
             <!--Left Third Content  -->
-            <div class="flex items-center gap-4">
+            <div class="flex flex-col lg:flex-row items-center gap-4">
               <div class="w-14 h-10 rounded-full bg-[#1212121a]">
                 <div class="flex justify-center mt-2">
                   <img src="./images/icons/gift-box.svg" alt="" />
@@ -603,19 +603,15 @@
           </div>
 
           <!--================== Choose us Middle Section ========================== -->
-          <div class="col-span-1">
+          <div class="order-1 lg:order-2">
             <img src="./images/whychoose1.png" alt="">
           </div>
           <!--==================== right content of choose us======================== -->
 
-          <div class="text-right float-right px-4 ">
+          <div class="text-center lg:text-right px-4 order-3 lg:order-3">
             <!-- Right First Line  -->
-              <div class="flex flex-row-reverse items-center gap-2">
-                <div class="w-14 h-10 rounded-full bg-[#1212121a]">
-                  <div class="flex justify-center mt-2">
-                    <img src="./images/icons/fruit.svg" alt="" />
-                  </div>  
-                </div>
+              <div class="flex flex-col lg:flex-row items-center gap-2">
+
                 <div class="space-y-2">
                   <h1 class="text-xl font-extrabold">
                     Integrated Supplier
@@ -626,6 +622,13 @@
                     amazing and fresh fruits.
                   </p>
                 </div>
+
+                <div class="w-14 h-10 rounded-full bg-[#1212121a]">
+                  <div class="flex justify-center mt-2">
+                    <img src="./images/icons/fruit.svg" alt="" />
+                  </div>  
+                </div>
+
               </div>
 
               <!--Right Second Line  -->
