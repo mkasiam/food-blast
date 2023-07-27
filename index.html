@@ -63,6 +63,9 @@
       function buyNowProduct4() {
         alert("You are about to buy Product-4!");
       }
+      function ShopAll() {
+        alert("Going to see all items");
+      }
 
     </script>
     <title>Fruit Burst</title>
@@ -127,11 +130,11 @@
       <!--=============================== Banner section ============================= -->
       <section class="my-5">
         <!-- =====Carousel======   -->
-        <div class="carousel w-full relative rounded-xl">
+        <div class="carousel w-full relative rounded-xl h-1/4 md:1/4 lg:h-[500px] overflow-hidden">
           <!-- Slide-1  -->
           <div id="slide1" class="carousel-item relative w-full">
             <div
-              class="hero w-full bg-cover h-inherit"
+              class="hero w-full bg-cover "
               style="background-image: url(./images/banner1.png);"
             >
               <div class="hero-overlay bg-opacity-60"></div>
@@ -160,7 +163,7 @@
           <!-- Slide-2  -->
           <div id="slide2" class="carousel-item relative w-full">
             <div
-              class="hero min-h-screen"
+              class="hero w-full bg-cover"
               style="background-image: url(./images/banner2.png)"
             >
               <div class="hero-overlay bg-opacity-60"></div>
@@ -189,7 +192,7 @@
           <!-- Slide-3  -->
           <div id="slide3" class="carousel-item relative w-full">
             <div
-              class="hero min-h-screen"
+              class="hero w-full bg-cover"
               style="background-image: url(./images/banner3.png)"
             >
               <div class="hero-overlay bg-opacity-60"></div>
@@ -218,7 +221,7 @@
           <!-- Slide-4  -->
           <div id="slide4" class="carousel-item relative w-full">
             <div
-              class="hero min-h-screen"
+              class="hero w-full bg-cover"
               style="background-image: url(./images/banner4.png)"
             >
               <div class="hero-overlay bg-opacity-60"></div>
@@ -247,7 +250,7 @@
         </div>
        <!-- Relative Information Box  -->
        <div class="flex justify-center">
-        <div class="hidden md:hidden lg:block absolute -bottom-52 mx-auto">
+        <div class="hidden md:hidden lg:block absolute -bottom-24 mx-auto">
           <div class="flex gap-5 bg-[#FFF] shadow-xl rounded-xl px-14 py-7 mx-auto">
             <div class="text-center">
               <img class="mx-auto" src="./images/fruit1.png" alt="" />
@@ -390,7 +393,7 @@
 
                           <div class="flex gap-x-5 mx-auto">
                             <button class="btn" onclick="closeModal(my_modal_2)">Close</button>
-                            <button class="btn bg-common-color text-white border-0" onclick="buyNowProduct2()">Buy Now</button>
+                            <button class="btn bg-common-color text-white border-0" onclick="ShopAll()">Buy Now</button>
                           </div>
                       </div>
                       
@@ -486,7 +489,7 @@
               </div>
           </div>
           <div class="text-center">
-            <button class="btn bg-common-color">Shop All</button>
+            <button class="btn bg-common-color" onclick="ShopAll()">Shop All</button>
           </div>
       </section>
 
